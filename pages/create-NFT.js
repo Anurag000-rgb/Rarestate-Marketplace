@@ -24,7 +24,7 @@ const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDlk
 const client1 = new NFTStorage({token: TOKEN});
 
 
-export default function createNFTs(){
+export default function CreateNFTs(){
 
   const [formInput, updateFormInput] = useState({ Price: "", NFTname: "", Ownername: "", Address: "", Zipcode: "", Description: "", PhoneNo: "", Email: ""});
   const [fileUrl, setFileUrl] = useState(null);

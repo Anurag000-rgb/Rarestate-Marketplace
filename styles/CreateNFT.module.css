@@ -1,0 +1,28 @@
+.paragraph {
+  color: black;
+}
+
+/* .bg {
+      background-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      opacity: 0;
+      padding: 1rem;
+      z-index: 1;
+    } */
+
+.title {
+  color: black;
+  opacity: 1;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -26,19 +26,19 @@ const client1 = new NFTStorage({token: TOKEN});
 
 export default function createNFTs(){
 
-  const [formInput, updateFormInput] = useState({ Price: "", NFTname: "", Ownername: "", Address: "", Zipcode: "", Description: "", PhoneNo: "", Email: ""})
-  const [fileUrl, setFileUrl] = useState()
-  const [front, setFront] = useState()
-  const [back,setBack] = useState()
-  const [video,setVideo] = useState()
-  const [dl, setDl] = useState()
-  const [nftPhoto, setNftPhoto] = useState()
-  const [qrcode, setQRcode] = useState()
-  const [ec, setEc] = useState()
-  const [registation, setRegistation] = useState()
-  const [tax, setTax] = useState()
-  const [transfer, setTransfer] = useState()
-  const router = useRouter();
+  const [formInput, updateFormInput] = useState({ Price: "", NFTname: "", Ownername: "", Address: "", Zipcode: "", Description: "", PhoneNo: "", Email: ""});
+  const [fileUrl, setFileUrl] = useState(null);
+  const [front, setFront] = useState(null);
+  const [back,setBack] = useState(null);
+  const [video,setVideo] = useState(null);
+  const [dl, setDl] = useState(null);
+  const [nftPhoto, setNftPhoto] = useState(null);
+  const [qrcode, setQRcode] = useState(null);
+  const [ec, setEc] = useState(null);
+  const [registation, setRegistation] = useState(null);
+  const [tax, setTax] = useState(null);
+  const [transfer, setTransfer] = useState(null);
+  const router = useRouter(null);
 
 
     async function onChange_front(e) {

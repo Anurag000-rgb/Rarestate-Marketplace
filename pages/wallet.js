@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/_app.module.css";
-import logo from "./avalancheLogo.jpeg"
+//import logo from "./avalancheLogo.jpeg"
 import { useMoralis, useMoralisWeb3ApiCall, useMoralisWeb3Api, useMoralisQuery, useMoralisCloudFunction } from "react-moralis";
 import { Button, ButtonGroup, Box, Wrap, Text, Heading, Divider, Stack, Alert, AlertIcon } from "@chakra-ui/react";
 import { Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, Container, Center } from "@chakra-ui/react";
@@ -159,7 +159,6 @@ function App() {
           </Alert>
         )}    
          <Center>
-          <img width={500} height={500} src={logo} alt="logo" />
         </Center>   
         <br />
         <Center>
@@ -186,7 +185,6 @@ function App() {
       )}
       <LogoutButton />
       <Center>
-        <img width={500} height={500} src={logo} alt="logo" />
       </Center>
 
       <Center>

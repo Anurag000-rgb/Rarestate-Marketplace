@@ -1,4 +1,4 @@
-const broker = () => {
+const Broker = () => {
     return (
         <div className="pt-32 text-center align-center">
              <h1 className="text-6xl">Comming Soon</h1>
@@ -15,4 +15,4 @@ const broker = () => {
     )
 }
 
-export default broker;
+export default Broker;

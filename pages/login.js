@@ -1,7 +1,7 @@
 import Styles from "../styles/Login.module.css"
 import { useMoralis} from 'react-moralis';
 
-export default function newUser() {
+export default function NewUser() {
   const {authenticate, authError} = useMoralis();
 
 

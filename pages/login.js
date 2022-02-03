@@ -1,4 +1,4 @@
-import Styles from "../styles/Login.module.css"
+import Styles from '../styles/Login.module.css'
 import { useMoralis} from 'react-moralis';
 
 export default function NewUser() {

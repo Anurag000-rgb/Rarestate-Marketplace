@@ -2,7 +2,7 @@ import react,{useState, useEffect} from 'react';
 import login from "./login"
 import { ethers } from 'ethers'
 import Web3Modal from 'web3modal'
-import {useMoralis} from "react-moralis";
+import { useMoralis } from "react-moralis";
 import Styles from "../styles/CreateNFT.module.css";
 import { NFTStorage, Blob } from "nft.storage";
 import { useRouter } from 'next/router';
@@ -25,7 +25,7 @@ const client1 = new NFTStorage({token: TOKEN});
 
 
 export default function CreateNFTs(){
-
+  const { authenticate, isAuthenticated, user, Moralis } = useMoralis();
   const [formInput, updateFormInput] = useState({ Price: "", NFTname: "", Ownername: "", Address: "", Zipcode: "", Description: "", PhoneNo: "", Email: ""});
   const [fileUrl, setFileUrl] = useState(null);
   const [front, setFront] = useState(null);
@@ -453,10 +453,13 @@ export default function CreateNFTs(){
             }
 
             </div>
-            
+            {isAuthenticated ? (
             <button onClick={createItem} className="font-bold mt-4 bg-pink-500 hover:bg-white text-white hover:text-black rounded p-4 shadow-lg">
               Add To Rarestate Marketplace
             </button>
+             ) : (
+                <Login/>
+              )}
           </div>
         </div>
     )

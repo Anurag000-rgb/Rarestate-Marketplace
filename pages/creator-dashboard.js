@@ -61,9 +61,11 @@ export default function CreatorDashboard() {
    
     
         <div className="p-4">
+        
             <h2 className="text-2xl py-2 mt-24 ">Items Created</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
             {
+                
                 nfts.map((nft, i) => (
                 <div key={i} className="border shadow rounded-xl overflow-hidden bg-gradient-to-r from-purple-100 to-pink-100">
                     <img src={nft.image} className="rounded max-h-full max-w-full" />
@@ -72,6 +74,7 @@ export default function CreatorDashboard() {
                     </div>
                 </div>
                 ))
+                
             }
             </div>
         </div>
@@ -95,6 +98,7 @@ export default function CreatorDashboard() {
                 </div>
             )
             }
+             
             </div>
     
     </div>

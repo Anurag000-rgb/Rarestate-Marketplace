@@ -6,6 +6,7 @@ import { useMoralis } from "react-moralis";
 import Styles from "../styles/CreateNFT.module.css";
 import { NFTStorage, Blob } from "nft.storage";
 import { useRouter } from 'next/router';
+import Login from "./login"
 //import { CIDString, StatusResult } from "nft.storage/dist/src/lib/interface";
 import {
   nftaddress, nftmarketaddress
